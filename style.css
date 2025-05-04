@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+  --white: #ffffff;
+  --grey-900: #48556a;
+  --grey-500: #6e8098;
+  --grey-400: #9daec2;
+  --grey-200: #ecf2f8;
+
+  /* Spacing */
+  --scp-0-0px: 0px;
+  --scp-200-16px: 1rem;
+  --scp-300-24px: 1.5rem;
+  --scp-400-32px: 2rem;
+  --scp-500-40px: 2.5rem;
+  --scp-600-48px: 3rem;
+  --scp-700-48px: 3.5rem;
+  --scp-800-64px: 4rem;
+  --scp-1300-64px: 6.5rem;
+  --scp-2000-160px: 10rem;
+}
+
+/* Typography */
+
+.text-preset-1-bold {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 130%;
+  letter-spacing: 0.25%;
+}
+
+.text-preset-2-medium {
+  font-family: "Manrope", sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 0.12%;
+}
+
+.text-preset-2-bold {
+  font-family: "Manrope", sans-serif;
+  font-size: 0.8125rem;
+  font-weight: bold;
+  line-height: 140%;
+  letter-spacing: 0.12%;
+}
+
+.text-preset-3 {
+  font-family: "Manrope", sans-serif;
+  font-size: 0.8125rem;
+  font-weight: normal;
+  line-height: 140%;
+  letter-spacing: 25%;
+}
