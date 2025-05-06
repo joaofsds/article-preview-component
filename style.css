@@ -62,7 +62,7 @@
 body {
   display: flex;
   height: 100vh;
-  align-self: center;
+  justify-content: center;
   background: var(--grey-200);
 }
 
@@ -100,12 +100,12 @@ body {
 }
 
 .container-author {
-  display: flex;
+  display: none;
   align-items: center;
 }
 
 .container-medias {
-  display: flex;
+  display: none;
   background: var(--grey-900) ;
   align-items: center;
   padding: var(--scp-300-24px) var(--scp-400-32px);
@@ -164,6 +164,10 @@ height: 20px;
   background-color: var(--grey-200);
 }
 
+.share-button:hover {
+  cursor: pointer;
+}
+
 .share-button-alt{
   display: flex;
   margin-left: 52px;
@@ -175,9 +179,11 @@ height: 20px;
   background-color: var(--grey-500);
 }
 
-.share-button:hover {
+.share-button-alt:hover{
   cursor: pointer;
 }
+
+
 
 .active {
   display: flex;

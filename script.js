@@ -1,7 +1,23 @@
-const sharebtn = document.querySelector(".share-button");
-const sectionAuthor = document.getElementById("section-author");
+const shareBtn = document.querySelector(".share-button");
+const shareBtnDark = document.querySelector(".share-button-alt")
+const bodyClick = document.body;
 
-sharebtn.addEventListener("click", function () {
-  sectionAuthor.remove();
-  console.log("now include the other div");
-});
+const authorSection = document.getElementById("section-author");
+const authorMedia = document.getElementById("section-media");
+
+shareBtn.addEventListener("click", () => {
+  authorSection.classList.toggle("active");
+  authorMedia.classList.toggle("active");
+})
+
+shareBtnDark.addEventListener("click", () => {
+  authorSection.classList.toggle("active");
+  authorMedia.classList.toggle("active");
+
+})
+
+
+
+
+
+
