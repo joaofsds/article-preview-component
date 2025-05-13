@@ -74,8 +74,9 @@ body {
   min-height: 538px;
   background: var(--white);
   border-radius: 10px;
-  overflow: hidden;
+  overflow:hidden;
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  position: relative;
 }
 
 .image-drawer {
@@ -189,17 +190,28 @@ body {
 }
 
 .active-desktop {
-  display: flex;
+  display:block;
   position: absolute;
-  bottom: 500px;
-  right: 200px;
+  bottom: 120px;
+  right: 10px;
   border-radius: 10px;
-  
+}
+
+ .active-desktop::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  right: 57px;
+  transform: translateX(-50%);
+  border-width: 15px;
+  border-style: solid;
+  border-color: var(--grey-900) transparent transparent transparent;
+
 }
 
 @media (min-width: 768px) {
   body {
-    background: grey;
+    background: var(--grey-200);
   }
 
   .image-drawer {
