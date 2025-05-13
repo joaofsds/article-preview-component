@@ -1,23 +1,34 @@
 const shareBtn = document.querySelector(".share-button");
-const shareBtnDark = document.querySelector(".share-button-alt")
-const bodyClick = document.body;
-
+const shareBtnDark = document.querySelector(".share-button-alt");
 const authorSection = document.getElementById("section-author");
 const authorMedia = document.getElementById("section-media");
+const shareAlt = document.getElementById("share-alt");
 
-shareBtn.addEventListener("click", () => {
-  authorSection.classList.toggle("active");
-  authorMedia.classList.toggle("active");
-})
+function showHideMobile() {
+  shareBtn.addEventListener("click", () => {
+    authorMedia.classList.toggle("active");
+    authorSection.classList.toggle("active");
+  });
 
-shareBtnDark.addEventListener("click", () => {
-  authorSection.classList.toggle("active");
-  authorMedia.classList.toggle("active");
+  shareBtnDark.addEventListener("click", () => {
+    authorMedia.classList.toggle("active");
+    authorSection.classList.toggle("active");
+  });
+}
 
-})
+function showHideDesktop() {
+  shareBtn.addEventListener("click", () => {
+    authorMedia.classList.toggle("active-desktop");
+    shareAlt.classList.add("inactive");
+  });
+}
 
+function showHide() {
+  if (window.innerWidth <= 768) {
+    showHideMobile();
+  } else {
+    showHideDesktop();
+  }
+}
 
-
-
-
-
+shareBtn.addEventListener("click", showHide());

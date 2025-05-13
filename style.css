@@ -150,6 +150,7 @@ body {
 }
 
 .share-button {
+  position: relative;
   display: flex;
   align-items: center;
   justify-items: center;
@@ -183,6 +184,19 @@ body {
   display: flex;
 }
 
+.inactive {
+  display: none;
+}
+
+.active-desktop {
+  display: flex;
+  position: absolute;
+  bottom: 500px;
+  right: 200px;
+  border-radius: 10px;
+  
+}
+
 @media (min-width: 768px) {
   body {
     background: grey;
@@ -206,4 +220,6 @@ body {
   .container-card {
     padding: var(--scp-500-40px) var(--scp-400-32px);
   }
+
+
 }
