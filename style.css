@@ -201,7 +201,7 @@ body {
   content: "";
   position: absolute;
   bottom: -30px;
-  right: 57px;
+  right: 10px;
   transform: translateX(-50%);
   border-width: 15px;
   border-style: solid;
@@ -233,5 +233,29 @@ body {
     padding: var(--scp-500-40px) var(--scp-400-32px);
   }
 
+  .author {
+    margin-right: var(--scp-1300-64px);
+  }
+
+
+}
+
+@media (min-width: 1080px) {
+  .container {
+    min-width: 730px;
+    max-height: 300px;
+  }
+
+  .author {
+    margin-right: 180px;
+  }
+
+  .active-desktop {
+    bottom: 80px;
+  }
+
+  .active-desktop::after {
+    right: 10px;
+  }
 
 }
